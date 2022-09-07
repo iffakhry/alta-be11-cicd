@@ -19,7 +19,8 @@ func New(e *echo.Echo, usecase user.UsecaseInterface) {
 
 	e.GET("/users", handler.GetAll)
 	e.POST("/users", handler.PostData)
-	e.POST("/hello", handler.GetAll)
+	e.GET("/hello", handler.GetAll)
+	e.GET("/sapaan", handler.GetAll)
 }
 
 func (delivery *UserDelivery) GetAll(c echo.Context) error {
