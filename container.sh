@@ -1,2 +1,1 @@
-docker run -d -p 80:8000 -e SERVER_PORT="8000" -e DB_USERNAME="admin" -e DB_PASSWORD="qwerty123" -e DB_HOST="database-1.cca0n6ft2kkh.ap-southeast-1.rds.amazonaws.com" -e DB_PORT="3306" -e DB_NAME="db_be11" --name apiBe11Contai
-ner iffakhry/alta-be11:latest
+docker run -d -p 80:8000 -e SERVER_PORT="8000" -e DB_USERNAME="admin" -e DB_PASSWORD="qwerty123" -e DB_HOST="database-1.cca0n6ft2kkh.ap-southeast-1.rds.amazonaws.com" -e DB_PORT="3306" -e DB_NAME="db_be11" --name apiBe11Container iffakhry/alta-be11:latest
