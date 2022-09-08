@@ -14,3 +14,11 @@ type Core struct {
 	UpdatedAt time.Time
 	User      user.Core
 }
+
+type UsecaseInterface interface {
+	Add(data Core) (row int, err error)
+}
+
+type DataInterface interface {
+	Insert(data Core) (row int, err error)
+}
