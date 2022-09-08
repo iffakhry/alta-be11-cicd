@@ -22,5 +22,6 @@ jobs:
             git pull origin main
             docker stop be11Api
             docker rm be11Api
+            docker rmi be11-api
             docker build -t be11-api:latest .
             docker run -d -p 8080:8000 -e SERVER_PORT=${{ secrets.SERVER_PORT }} -e DB_USERNAME=${{ secrets.DB_USERNAME }} -e DB_PASSWORD=${{ secrets.DB_PASSWORD }} -e DB_HOST=${{ secrets.DB_HOST }} -e DB_PORT=${{ secrets.DB_PORT }} -e DB_NAME=${{ secrets.DB_NAME }} --name be11Api be11-api:latest
